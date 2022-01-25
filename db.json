@@ -1,16 +1,78 @@
 {
     "posts": [
         {
+            "id": "root",
+            "name": "Publikation",
+            "type": "publication"
+        },
+        {
             "id": 1,
-            "title": "Post 1"
+            "parentID": "root",
+            "name": "Channel:Web",
+            "type": "channel"
         },
         {
-            "id": 2,
-            "title": "Post 2"
+            "id": 4,
+            "parentID": 1,
+            "name": "Rubrik",
+            "type": "section",
+            "channel": "Channel:Web"
         },
         {
-            "id": 3,
-            "title": "Post 3"
+            "id": 6,
+            "parentID": 4,
+            "name": "Sport",
+            "type": "section",
+            "channel": "Channel:Web"
+        },
+        {
+            "id": 9,
+            "parentID": 6,
+            "name": "artikel-detail",
+            "type": "article",
+            "channel": "Channel:Web"
+        },
+        {
+            "id": 7,
+            "parentID": 6,
+            "name": "Fußball",
+            "type": "section",
+            "channel": "Channel:Web"
+        },
+        {
+            "id": 8,
+            "parentID": 7,
+            "name": "video-artikel",
+            "type": "article",
+            "channel": "Channel:Web"
+        },
+        {
+            "id": 5,
+            "parentID": 1,
+            "name": "Artikeltypen (defaults)",
+            "type": "article",
+            "channel": "Channel:Web"
+        },
+        {
+            "id": 10,
+            "parentID": 5,
+            "name": "artikel-detail",
+            "type": "article",
+            "channel": "Channel:Web"
+        },
+        {
+            "id": 11,
+            "parentID": 5,
+            "name": "video-artikel",
+            "type": "article",
+            "channel": "Channel:Web"
+        },
+        {
+            "id": 12,
+            "parentID": 1,
+            "name": "Custom content-conector",
+            "type": "content-conector",
+            "channel": "Channel:Web"
         }
     ],
     "comments": [
